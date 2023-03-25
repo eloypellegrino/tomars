@@ -1,0 +1,480 @@
+:root {
+    --primary-color: #e48481;
+    --white-color: #fff;
+    --gap: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 5.5rem;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* .menu-space {
+    height: 98px;
+} */
+
+.logo a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.main-bg {
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ), url('../img/main-bg.png');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+    display: flex;
+}
+
+.main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.logo {
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.menu {
+    position: fixed;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    right: 0;
+z-index: 10;
+}
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cta-btn {
+    padding: 2rem 4rem;
+    width:fit-content;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background-color: #000;
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.cta-btn:hover {
+    color: var(--primary-color);
+}
+
+.viagem-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: var(--gap);
+    padding: 120px;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+.viagem-content p {
+    font-size: 2rem;
+    color: #00000099;
+}
+
+.viagem-content .cta-btn {
+    margin-top: 20px;
+}
+
+.dark-bg {
+    background-color: #000;
+    color: var(--white-color);
+}
+
+.grid-one-content {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    margin-top: 40px;
+}
+
+.grid div {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    padding: 40px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+    transition: all 300ms ease-in-out;
+}
+
+.grid div:hover {
+    opacity: .85;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.grid div h3 {
+    font-size: 2rem;
+    padding-top: 10px;
+    position: relative;
+}
+
+.grid div h3:before {
+    content: "";
+    background: var(--primary-color);
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    top: 0;
+  }
+
+.grid div p {
+    font-size: 1.5rem;
+}
+
+#acomodacoes .main-content > p {
+    color: #ffffff99;
+}
+
+.redplanet {
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      ), url('../img/redplanet.png');
+}
+
+.martian {
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      ), url('../img/martian.png');
+}
+
+.lodge {
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      ), url('../img/lodge.png');
+}
+
+.preco-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: var(--gap);
+    max-width: 900px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.preco-content p {
+    color: #00000099;
+}
+
+.preco-content .plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+}
+
+.preco-content .plan {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #00000007;
+    border-radius: 5px;
+    justify-content: center;
+    border: 1px solid #00000012;
+}
+
+.preco-content .plan h3 {
+    position: relative;
+    padding-top: 10px;
+}
+
+.preco-content .plan h3:before {
+    content: "";
+    background: var(--primary-color);
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    top: 0;
+}
+
+.preco-content .plan:last-child h3:before {
+    content: "";
+    background: var(--primary-color);
+    position: absolute;
+    height: 3px;
+    width: 80px;
+    top: 0;
+}
+
+.preco-content .plan ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.preco-content .plan ul .cta-btn{
+    margin-top: 20px;
+}
+
+.preco-content .plan ul li {
+    font-size: 1.5rem;
+    padding: 5px 0;
+}
+
+.preco {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 10px;
+}
+
+#contato h2 {
+    margin-bottom: 10px;
+}
+
+#contato p {
+    color: #ffffff99;
+}
+
+.contato-form {
+    grid-column: span 2;
+}
+
+.contato-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    margin-top: 40px;
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input, textarea {
+    margin-top: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    color: #ccc;
+    font-size: 1.7rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.form-group textarea {
+    height: 160px;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group .cta-btn {
+    color: #000;
+    background-color: #fff;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group .cta-btn:hover {
+    background-color: #444;
+    color: var(--white-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.closemenu {
+    display: none;
+}
+
+.btnScrollToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #222;
+    color: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    display: none;
+    z-index: 99;
+    border: 1px solid #444;
+}
+
+@media (max-width: 800px) {
+    .section {
+        align-items: center;
+    }
+    .intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro .cta-btn {
+        margin: 0 auto;
+    }
+    .viagem-content {
+        padding: 120px 20px 100px 20px;
+    }
+    .grid-one-content {
+        display: grid;
+        padding: 120px 20px 100px 20px;
+    }
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+        margin-top: 40px;
+    }
+    .preco-content {
+        padding: 120px 20px 100px 20px;
+    }
+    .preco-content .plans {
+        grid-template-columns: 1fr;
+    }
+    .menu {
+        bottom: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .menu-content, ul {
+        margin-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu-content {
+        height: 100vh;
+    }
+    .menu {
+        display: none;
+    }
+    .closemenu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 12;
+        top: 2rem;
+        right: 2rem;
+        background-color: #000;
+        color: var(--white-color);
+        font-size: 4rem;
+        line-height: 3.7rem;
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        padding: 0.5rem;
+        padding-top: 0;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .closemenu:checked~.menu {
+        z-index: 11;
+        display: block;
+    }
+    .closemenu:checked~.closemenu-label::after {
+        display: block;
+        content: '×';
+        line-height: 4.5rem;
+    }
+} 
