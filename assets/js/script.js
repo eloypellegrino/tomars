@@ -11,5 +11,5 @@ btnScrollToTop.addEventListener('click', (e) => {
 
 // toggle 'scroll to top' based on scroll position
 window.addEventListener('scroll', (e) => {
-    btnScrollToTop.style.display = window.scrollY > 20 ? 'flex' : 'none';
+    btnScrollToTop.classList.toggle('show', window.scrollY > 20);
 });

@@ -389,7 +389,6 @@ footer {
 }
 
 .btnScrollToTop {
-    position: fixed;
     bottom: 2rem;
     right: 2rem;
     background: #222;
@@ -399,9 +398,16 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    display: none;
+    opacity: 0;
     z-index: 99;
     border: 1px solid #444;
+    position: fixed;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+}
+
+.btnScrollToTop.show {
+    opacity: 1;
 }
 
 @media (max-width: 800px) {
